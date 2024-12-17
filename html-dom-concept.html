@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM 核心觀念</title>
+</head>
+<body>
+    <script>
+        // 默認內建的 window物件 (HTML DOM 結構的最上層)
+        console.log(window)
+        // 取得視窗的寬度與高度
+        console.log(window.innerWidth, window.innerHeight);
+        // 透過 screen 物件，取得螢幕尺寸
+        console.log(window.screen.width, window.screen.height);
+        // 取得網址內容
+        console.log(window.location.href);
+        // 更改網址列的內容 (跳轉網頁)
+
+
+        //認識document物件
+        console.log(window.document);
+        console.dir(document);
+        // 取得網頁標題
+        console.log(document.title);
+        // 取得body標籤
+        console.log(document.body);
+        // 更改網頁主畫面的內容 (Body標籤的內文)
+        console.log(document.body.innerHTML)
+        document.body.innerHTML = "123"
+    </script>
+</body>
+</html>

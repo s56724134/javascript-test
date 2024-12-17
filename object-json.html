@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            //建立物件
+            /*
+            let man = new Object();
+            man.age = 18;// 物件.成員名稱=資料
+            man.name = "小王";
+            man.talk = function() {
+                console.log("Hello");
+            }
+            //使用物件
+            console.log(man);
+            console.log(man.age > 20);
+            */
+
+            //使用JSON建立物件
+            let man = {
+                age:15, 
+                name:"小芬", 
+                talk:function() {
+                    console.log("Hello");
+                }
+            };
+            console.log(man);
+            console.log(man.age > 20);
+            man.talk();
+        </script>
+</body>
+</html>

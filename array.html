@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陣列物件</title>
+</head>
+<body>
+    <script>
+        // 建立陣列物件
+        let grades = [25, 100];
+        grades.push(70);
+        grades.push(50); 
+        grades.push(80);
+        grades.push(84);
+        console.log(grades[0]);
+        console.log(grades[1]);
+        console.log(grades[2]);
+        //利用for迴圈，逐一取得陣列中的資料
+        //算平均數, 先算總和
+        let total = 0;
+        for (let i=0; i<grades.length; i++) {
+            total += grades[i];
+        }
+        console.log(total);
+    </script>
+</body>
+</html>

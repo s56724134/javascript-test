@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // constructor寫法
+        /*
+        function Cake(size, flavor) {
+            this.size = size;
+            this.flavor = flavor;
+        }
+        // calss declaration寫法
+        class Cake {
+            constructor (size, flavor) {
+                this.size = size;
+                this.flavor = flavor;
+            }
+        }
+        // class expression寫法
+        let Cake = class {
+            constructor (size, flavor) {
+                this.size = size;
+                this.flavor = flavor;
+            }
+        }
+        let cake2 = new Cake("M", "choco");
+        console.log(cake2)
+        */
+
+        // constructor的共享屬性
+        /*
+        function Cake(flavor) {
+            this.flavor = flavor;
+        }
+        Cake.prototype = {
+            price: (cost) => `NTD ${cost * 1.5}`
+        }
+        let cake1 = Cake("cream");
+        cake1.price(50);
+        */
+
+        // class 將共享的 method 寫在 class 內
+        class Cake {
+            constructor(flavor) {
+                this.flavor = flavor;
+            }
+            price(cost) {
+                return `NTD ${cost * 1.5}`
+            }
+        }
+        let cake1 = new Cake("choco")
+        cake1.price(50)// NTD 75
+    </script>
+</body>
+</html>
